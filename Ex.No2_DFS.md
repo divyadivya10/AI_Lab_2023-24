@@ -13,7 +13,7 @@ To write a python program to implement Depth first Search.
 7. Stop the program.
 ### Program:
 
-
+```
 graph = {
     '5': ['3', '7'],
     '3': ['2', '4'],
@@ -35,6 +35,7 @@ def dfs(visited, graph, node):  # Function for DFS
 # Driver Code
 print("Following is the Depth-First Search:")
 dfs(visited, graph, '5')
+```
 
 ### Output:
 ![image](https://github.com/user-attachments/assets/7f4eda13-3bc7-44b2-b94c-8cd5ba2c3883)
