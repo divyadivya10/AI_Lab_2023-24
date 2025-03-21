@@ -37,14 +37,6 @@ print("The optimal value is:", end=" ")
 print(minimax(0, 0, True, scores, int(treeDepth)))  # Convert depth to int
 ```
 
-
-
-
-
-
-
-
-
 ### Output:
 
 ![Screenshot 2025-03-11 113237](https://github.com/user-attachments/assets/2c29ff49-d296-4bc5-8510-99e8d9b97c77)
