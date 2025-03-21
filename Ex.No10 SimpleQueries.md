@@ -44,8 +44,19 @@ Convert the facts in predicate form to clauses and then prove by resolution: “
 
 ### Program:
 
+```
+easy(X) :- fun(X).
+likes(steve, X) :- easy(X).
+hard(X) :- science(X).
+fun(bk301).
+science(physics).
+science(chemistry).
+```
+
 
 ### Output:
+![image](https://github.com/user-attachments/assets/722eee40-1567-415a-8a70-70ff154c0662)
+
 
 ### Task 3:
 Consider the statement <br> 
