@@ -1,35 +1,40 @@
-# Ex.No: 11  Planning –  Block World Problem 
-### DATE:                                                                            
-### REGISTER NUMBER : 
+# Ex.No: 6  Logic Programming – Towers of Hanoi  
+### DATE: 08/04/2025                                                                      
+### REGISTER NUMBER : 212222040040 
 ### AIM: 
-To find the sequence of plan for Block word problem using PDDL  
-###  Algorithm:
-Step 1 :  Start the program <br>
-Step 2 : Create a domain for Block world Problem <br>
-Step 3 :  Create a domain by specifying predicates clear, on table, on, arm-empty, holding. <br>
-Step 4 : Specify the actions pickup, putdown, stack and un-stack in Block world problem <br>
-Step 5 :  In pickup action, Robot arm pick the block on table. Precondition is Block is on table and no other block on specified block and arm-hand empty.<br>
-Step 6:  In putdown action, Robot arm place the block on table. Precondition is robot-arm holding the block.<br>
-Step 7 : In un-stack action, Robot arm pick the block on some block. Precondition is Block is on another block and no other block on specified block and arm-hand empty.<br>
-Step 8 : In stack action, Robot arm place the block on under block. Precondition is Block holded by robot arm and no other block on under block.<br>
-Step 9 : Define a problem for block world problem.<br> 
-Step 10 : Obtain the plan for given problem.<br> 
-     
+To  write  a logic program  to solve Towers of Hanoi problem  using SWI-PROLOG. 
+### Algorithm:
+1. Start the program
+2.  Write a rules for finding solution of Towers of Hanoi in SWI-PROLOG.
+3.  a )	If only one disk  => Move disk from X to Y.
+4.  b)	If Number of disk greater than 0 then
+5.        i)	Move  N-1 disks from X to Z.
+6.        ii)	Move  Nth disk from X to Y
+7.        iii)	Move  N-1 disks from Y to X.
+8. Run the program  to find answer of  query.
+
 ### Program:
+```
+move(1,X,Y,_) :-  
+    write('Move top disk from '), 
+    write(X), 
+    write(' to '), 
+    write(Y), 
+    nl. 
+move(N,X,Y,Z) :- 
+    N>1, 
+    M is N-1, 
+    move(M,X,Z,Y), 
+    move(1,X,Y,_), 
+    move(M,Z,Y,X).
+```
 
 
 
-
-
-
-
-
-
-### Input 
-
-### Output/Plan:
+### Output:
+![Screenshot 2024-03-29 225802](https://github.com/Vikhram-S/AI_Lab_2023-24/assets/146576573/0fbb8cd4-a493-411e-b5c1-cd83820bd3d7)
 
 
 
 ### Result:
-Thus the plan was found for the initial and goal state of block world problem.
+Thus the solution of Towers of Hanoi problem was found by logic programming.
