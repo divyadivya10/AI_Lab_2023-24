@@ -8,7 +8,7 @@ To write a program to train the classifier for Student performance prediction us
 
 2.Clean the data (remove ID, encode text fields)
 
-3.Label students as High or Low Performer based on CGPA ≥ 3.0
+3.Label students as High or Low Performer based on CGPA ≥ 3.0m
 
 4.Split data into training and testing sets
 
